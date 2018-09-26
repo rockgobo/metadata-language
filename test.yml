@@ -1,0 +1,14 @@
+---
+name: 'Elternfragebogen A12'
+description: |
+   Wir haben sie letztes mal gefragt...
+   und dieses mal fragen wir sie wieder ...
+   recht viele fragen
+questions:
+   - id: 12
+     question: 'Wo sind Sie beschäftigt?'
+   - id: 13
+     question: 'Was wollen Sie später einmal werden?'
+   - id: 14
+     question: 'Studieren Sie neben Ihrem Beruf?'
+     instruction: 'Immatrikulation mitbringen'

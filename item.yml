@@ -1,0 +1,11 @@
+item: &26216c 
+    variable name: etintro14
+    variable label: Nebentätigkeit
+    question number: 26216c
+    question text: Haben Sie seit <#20101P3(intmPRE/intjPRE)> noch einen bezahlte Nebentätigkeit ausgeübt?,
+    outgoing filter: |
+        if 26216c == 1 GOTO 23435s 
+    values: 
+        - 1: ja
+        - 2: nein
+

@@ -1,0 +1,85 @@
+{
+   "definitions": {},
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "$id": "http://example.com/root.json",
+   "type": "object",
+   "title": "The Root Schema",
+   "required": [
+     "item"   ],
+   "properties": {
+     "item": {
+       "$id": "#/properties/item",
+       "type": "object",
+       "title": "The Item Schema",
+       "required": [
+         "variable name",
+         "variable label",
+         "question number",
+         "question text",
+         "outgoing filter"
+       ],
+       "properties": {
+         "variable name": {
+           "$id": "#/properties/item/properties/variable name",
+           "type": "string",
+           "title": "The name of the variable",
+           "default": "",
+           "examples": [
+             "etintro14"
+           ],
+           "pattern": "^(.*)$"
+         },
+         "variable label": {
+           "$id": "#/properties/item/properties/variable label",
+           "type": "string",
+           "title": "The label of the variable",
+           "default": "",
+           "examples": [
+             "Nebentätigkeit"
+           ],
+           "pattern": "^(.*)$"
+         },
+         "question number": {
+           "$id": "#/properties/item/properties/question number",
+           "type": "string",
+           "title": "The question number",
+           "default": "",
+           "examples": [
+             "26216c"
+           ],
+           "pattern": "^(.*)$"
+         },
+         "question text": {
+           "$id": "#/properties/item/properties/question text",
+           "type": "string",
+           "title": "The question text",
+           "default": "",
+           "examples": [
+             "Haben Sie seit <#20101P3(intmPRE/intjPRE)> noch einen bezahlte Nebentätigkeit ausgeübt?"
+           ],
+           "pattern": "^(.*)$"
+         },
+         "outgoing filter": {
+           "$id": "#/properties/item/properties/outgoing filter",
+           "type": "string",
+           "title": "The filter text for outgoing filter",
+           "default": "",
+           "examples": [
+             "goto <next>"
+           ]
+         },
+         "values": {
+           "$id": "#/properties/item/properties/values",
+           "type": "array",
+           "title": "The Values Schema",
+           "items": {
+             "$id": "#/properties/item/properties/values/items",
+             "type": "object",
+             "title": "The Items Schema",
+             "uniqueItems" : true
+           }
+         }
+       }
+     }
+   }
+ }
