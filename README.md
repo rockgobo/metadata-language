@@ -77,16 +77,26 @@ Hier soll noch einmal darauf hingewiesen werden, dass ein YAML Dokument reiner T
 ## Schemabeschreibung mit einem YAML language server
 Die vorgestellten Editoren können zwar die grundlegende Form des Yaml überprüfen einen echten Mehrwert beim Wechsel von Word erreicht man allerdings erst, wenn man Hilfestellung bei der Erstellung des gewünschten Zielformats bekommt. Man muss also zunächst das Format selbst beschreiben. Es gibt für diesen Zweck Metasprachen in denen man das korrekte Zielformat definieren kann. Diese können über sogenannte Language Server in die Editoren eingebunden geben und vermitteln so einen guten Ausblick auf den Komfort den man durch den Umstieg erreichen kann.  
 
-### Autocompletion
-![Autovervollständigung](autocompletion.gif)
+### Unterstützung beim Erstellen von Instrumenten 
+Mit Hilfe der Beschreibung des Formats können die Texteditoren bereits zwei wichtige Unterstützungen bei der Erstellung von Instrumenten liefern: Autovervollständigung und Fehlerkontrolle.
+
+Autovervollständigung bedeutet, dass der Editor in der Lage ist aus der Beschreibungsdatei Texte selbstständig zu vervollständigen. Diese Vervollständigung funktioniert sogar für komplexe Elemente, wie einem kompletten Item: 
+
+  ![Autovervollständigung](Autocompletion.gif)
+  *Autovervollständigung von Strukturen aus der Beschreibungsdatei*
+
+Eines der wichtigsten Eigenschaften von Beschreibungsdokumentation ist es Fehler im Dokument zu erkennen und zu benennen. In diesem Beispiel wird das obligatorische Element `variable label` entfernt und der Editor ist in der Lage das Fehler mit der Meldung `Missing property "variable label"` zu benennen.
+  
+   ![Syntaxfehler](error.gif) 
+   *Syntaxfehler für obligatorische Felder*
 
 
-## Dokumentation von Befragungsinstrumenten in YAML
-Nachfolgend wird auf Grundlage der bisherigen Wordvorlage ein mögliches Format für den Austausch von Metadaten mit Hilfe von YAML definiert. Es soll illustrieren, das die Umsetzung zum einen sehr inuitiv ist und die Lesbarkeit trotz dem Gewinn der maschinenlesbarkeit nicht leidet.
+### Vergleichbarkeit von unterschiedlichen Versionen
 
 Ein großer Vorteil von YAML liegt in der guten Verwendbarkeit innerhalb von Arbeitsweisen, die sich auch in der Softwareentwicklung etabliert haben. Da YAML ein reines Textformat ist lässt es sich ausgezeichnet innerhalb eines Versionskontrollsystem verwenden. Dies bringt auch den Vorteil gemeinsam in einem kontrollierten Umfeld an einem Dokument zu arbeiten und der Vergleichbarkeit von verschiedenen Versionen. Manche Editoren bringen beide Möglichkeiten bereits mit, so wie zum Beispiel Visual Studio Code.
 
-![Zwei Dokumente in einem Diff Programm, hier Visual Studio Code](diff.jpg)
+  ![Zwei Dokumente in einem Diff Programm, hier Visual Studio Code](diff.gif)	
+  *Vergleich von verschiedenen Versionen*
 
 
 

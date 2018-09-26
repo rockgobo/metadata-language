@@ -1,9 +1,11 @@
 item:
     variable name: etintro14
-    variable label: Nebentätigkeit
+    variable label: Kindererziehung
     question number: 26216c
     question text: Haben Sie seit <#20101P3(intmPRE/intjPRE)> noch einen bezahlte Nebentätigkeit ausgeübt?
-    outgoing filter: goto 9999
+    outgoing filter: |
+        if(26216c = 1) goto 25
+        goto 9999
     values: 
     - 1: ja
     - 2: nein

@@ -75,9 +75,9 @@
            "items": {
              "$id": "#/properties/item/properties/values/items",
              "type": "object",
-             "title": "The Items Schema",
-             "uniqueItems" : true
-           }
+             "title": "The Items Schema"
+           },
+           "uniqueItems" : true
          }
        }
      }
