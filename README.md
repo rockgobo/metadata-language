@@ -82,12 +82,12 @@ Mit Hilfe der Beschreibung des Formats können die Texteditoren bereits zwei wic
 
 Autovervollständigung bedeutet, dass der Editor in der Lage ist aus der Beschreibungsdatei Texte selbstständig zu vervollständigen. Diese Vervollständigung funktioniert sogar für komplexe Elemente, wie einem kompletten Item: 
 
-  ![Autovervollständigung](Autocompletion.gif)
+  ![Autovervollständigung](images/Autocompletion.gif)
   *Autovervollständigung von Strukturen aus der Beschreibungsdatei*
 
 Eines der wichtigsten Eigenschaften von Beschreibungsdokumentation ist es Fehler im Dokument zu erkennen und zu benennen. In diesem Beispiel wird das obligatorische Element `variable label` entfernt und der Editor ist in der Lage das Fehler mit der Meldung `Missing property "variable label"` zu benennen.
   
-   ![Syntaxfehler](error.gif) 
+   ![Syntaxfehler](images/error.gif) 
    *Syntaxfehler für obligatorische Felder*
 
 
@@ -95,7 +95,7 @@ Eines der wichtigsten Eigenschaften von Beschreibungsdokumentation ist es Fehler
 
 Ein großer Vorteil von YAML liegt in der guten Verwendbarkeit innerhalb von Arbeitsweisen, die sich auch in der Softwareentwicklung etabliert haben. Da YAML ein reines Textformat ist lässt es sich ausgezeichnet innerhalb eines Versionskontrollsystem verwenden. Dies bringt auch den Vorteil gemeinsam in einem kontrollierten Umfeld an einem Dokument zu arbeiten und der Vergleichbarkeit von verschiedenen Versionen. Manche Editoren bringen beide Möglichkeiten bereits mit, so wie zum Beispiel Visual Studio Code.
 
-  ![Zwei Dokumente in einem Diff Programm, hier Visual Studio Code](diff.gif)	
+  ![Zwei Dokumente in einem Diff Programm, hier Visual Studio Code](images/diff.gif)	
   *Vergleich von verschiedenen Versionen*
 
 
